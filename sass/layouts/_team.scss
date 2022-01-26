@@ -1,0 +1,128 @@
+.team-section {
+    padding: 94px 0;
+    background-color: #f5f4fa;
+  }
+  
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  
+  .team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team-item {
+    list-style-type: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #fff;
+  }
+  
+  .team-item:not(:first-child) {
+    margin-left: 30px;
+  }
+  
+  .team-title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .team-member-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+  
+  .team-name {
+    color: var(--title-font-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .team-position {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--base-font-color);
+    text-align: center;
+  }
+  
+  /* SOCIAL MEDIA */
+  .sm-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .sm-item {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sm-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .sm-link:hover, .sm-link:active, .sm-link:focus {
+    background-color: var(--second-font-color);
+  }
+  
+  .sm-svg {
+    fill: #AFB1B8;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .sm-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .sm-link:hover .sm-svg, .sm-link:active .sm-svg, .sm-link:focus .sm-svg  {
+    fill: white;
+  }
+  
+  .sm-item .instagram {
+    width: 16.86px;
+    height: 16.86px;
+  }
+  
+  .sm-item .twitter {
+    width: 20px;
+    height: 16.25px;
+  }
+  
+  .sm-item .facebook {
+    width: 10px;
+    height: 20px;
+  }
+  
+  .sm-item .linkedin {
+    width: 20px;
+    height: 20px;
+  }
+  
