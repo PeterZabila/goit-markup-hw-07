@@ -18,7 +18,7 @@ header {
     align-items: center;
   }
   
-  .logo-title {
+  .logo__title {
     color: var(--second-font-color);
     text-decoration: none;
     font-weight: 400;
@@ -28,7 +28,7 @@ header {
     font-family: Raleway;
   }
   
-  .logo-title.studio-span {
+  .logo__title--design {
     color: var(--title-font-color);
   }
   
@@ -36,13 +36,13 @@ header {
     display: flex;
   }
   
-  .nav-list {
+  .nav__list {
     list-style-type: none;
     list-style-type: none;
     display: flex;
   }
   
-  .nav-item:not(:last-child) {
+  .nav__item:not(:last-child) {
     margin-right: 50px;
   }
   
@@ -51,8 +51,7 @@ header {
     margin-left: auto;
   }
   
-  
-  .nav-link {
+  .nav__link {
     text-decoration: none;
     color: var(--title-font-color);
     font-family: var(--base-font);
@@ -60,16 +59,14 @@ header {
     font-size: 14px;
     line-height: 1.17;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .nav-link:hover, .nav-link:active, .nav-link:focus {
+      &:hover, &:active, &:focus {
     color: var(--second-font-color);
+    }
   }
-  
-  .nav-link {
+
+  .nav__link {
     position: relative;
   }
-  
   
   .current::after {
     content: '';
@@ -82,13 +79,8 @@ header {
     bottom: -32px;
   }
   
-  /* .nav-item:active .nav-link::after {
-    transform: scaleX(1);
-    background-color: var(--second-font-color);
-  } */
-  
-  .contact-mail,
-  .contact-tel {
+  .contact__mail,
+  .contact__tel {
     color: var(--base-font-color);
     text-decoration: none;
     font-size: 14px;
@@ -97,7 +89,7 @@ header {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .envelope {
+  .contact__mail--envelope {
     fill: var(--base-font-color);
     width: 16px;
     height: 12px;
@@ -105,13 +97,15 @@ header {
     padding: 0;
     align-items: baseline;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contact__mail:hover &, 
+    .contact__mail:active &, 
+    .contact__mail:focus & {
+      fill: var(--second-font-color); 
+    }
   }
   
-  .contact-mail:hover .envelope, .contact-mail:active .envelope, .contact-mail:focus .envelope {
-    fill: var(--second-font-color); 
-  }
-  
-  .cell {
+    
+  .contact__tel--cell {
     fill: var(--base-font-color);
     width: 10px;
     height: 16px;
@@ -119,17 +113,20 @@ header {
     padding: 0;
     align-items: baseline;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contact__tel:hover &, 
+    .contact__tel:active &, 
+    .contact__tel:focus & {
+      fill: currentColor;
+    }
   }
   
-  .contact-tel:hover .cell, .contact-tel:active .cell, .contact-tel:focus .cell {
-    fill: currentColor;
-  }
   
-  .contact-tel {
+  
+  .contact__tel {
     margin-left: 50px;
   }
   
-  .contact-mail:hover,
-  .contact-mail:focus, .contact-tel:hover, .contact-tel:focus {
+  .contact__mail:hover,
+  .contact__mail:focus, .contact__tel:hover, .contact__tel:focus {
     color: var(--second-font-color);
   }

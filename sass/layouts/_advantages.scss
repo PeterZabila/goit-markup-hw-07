@@ -1,4 +1,4 @@
-.advant-svg {
+.advant__svg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,21 +14,20 @@
     justify-content: center;
   }
   
-  .advant-svg .clock {
+  .advant__svg .clock {
     width: 66.96px;
     height: 70px;
-  
     justify-content: center;
   }
   
-  .advant-svg .laptop {
+  .advant__svg .laptop {
     width: 70px;
     height: 53.69px;
     display: flex;
     justify-content: center;
   }
   
-  .advant-svg .astronaut {
+  .advant__svg .astronaut {
     width: 70px;
     height: 70px;
     display: flex;
@@ -45,20 +44,20 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: -30px; */
   }
   
-  .advant > .advant-item {
+  .advant > .advant__item {
     font-family: var(--base-font);
     margin-left: 30px;
     flex-basis: calc(100% / 4 - 30px);
   }
   
-  .advant-item:first-child {
+  .advant__item:first-child {
     margin-left: 0px;
   }
+
   
-  .advant-item-title {
+  .advant__title {
     font-family: var(--base-font);
     font-weight: 700;
     font-size: 14px;
@@ -69,7 +68,7 @@
     margin-bottom: 10px;
   }
   
-  .advant-item-description {
+  .advant__description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

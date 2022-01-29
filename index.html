@@ -18,48 +18,28 @@
           <div class="header"> 
         <!-- logo -->
             <div class="logo"> 
-              <a class="logo-title" href="./index.html">Web<span class="logo-title studio-span">Studio</span></a>
+              <a class="logo__title" href="./index.html">Web<span class="logo__title--design">Studio</span></a>
             </div>
 
         <!-- main nav -->
             <nav class="nav">
-              <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link current" href="./index.html">Студия</a></li>
-                <li class="nav-item"><a class="nav-link " href="./portfolio.html">Портфолио</a></li>
-                <li class="nav-item"><a class="nav-link " href="">Контакты</a></li>
-                <!-- <li class="nav-item">
-
-                  <label for="navbar">Услуги
-                  <select name="navbar" id="navbar" class="navbar">
-
-                      <option value="Дизайн" id="navbar-1" class="navbar-item">Дизайн</option>
-                 
-                  
-                      <option value="Верстка" id="navbar-2" class="navbar-item">Верстка</option>
-  
-              
-                      <option value="Аналитика" id="navbar-3" class="navbar-item">Аналитика</option>
-          
-        
-                      <option value="Тестирование" id="navbar-4" class="navbar-item">Тестирование</option>
-
-
-                  </select>
-                </label>
-                </li> -->
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link current" href="./index.html">Студия</a></li>
+                <li class="nav__item"><a class="nav__link " href="./portfolio.html">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link " href="">Контакты</a></li>
               </ul>
             </nav>
 
         <!-- contacts -->
             <div class="contact">
-              <a class="contact-mail" href="mailto:info@devstudio.com">
-                <svg class="envelope">
+              <a class="contact__mail" href="mailto:info@devstudio.com">
+                <svg class="contact__mail--envelope">
                   <use href="./images/icons.svg#envelope">
                   </use>
                 </svg>
                 info@devstudio.com</a>
-              <a class="contact-tel" href="tel:+380961111111">
-                <svg class="cell">
+              <a class="contact__tel" href="tel:+380961111111">
+                <svg class="contact__tel--cell">
                   <use href="./images/icons.svg#cell">
                   </use>
                 </svg>
@@ -69,12 +49,15 @@
           </div>
         </div>
       </header>
-    <main>
+   
+   
+   
+      <main>
       <!-- HERO section -->   
           <section class="hero">
               <div class="container">
-                <div class="hero-header">
-                  <h1 class="hero-title">Эффективные решения </br> для вашего бизнеса</h1>
+                <div class="hero__header">
+                  <h1 class="hero__title">Эффективные решения </br> для вашего бизнеса</h1>
                   <button class="button" type="button" value="Заказать услугу" data-modal-open>Заказать услугу</button>
                 </div>
               </div> 
@@ -84,50 +67,51 @@
       <section class="advantages">
           <div class="container">
             <ul class="advant">
-              <li class="advant-item">
-                <div class="advant-svg">
+              <li class="advant__item">
+                <div class="advant__svg">
                   <svg class="radar">
                     <use href="./images/icons.svg#radar"></use>
                   </svg>
                 </div>
-                <h3 class="advant-item-title">Внимание деталям</h3>
-                <p class="advant-item-description">
+                <h3 class="advant__title">Внимание деталям</h3>
+                <p class="advant__description">
                   Идейные соображения, а также начало повседневной работы по
                   формированию позиции.
                 </p>
               </li>
-              <li class="advant-item">
-                <div class="advant-svg">
+              <li class="advant__item">
+                <div class="advant__svg">
                   <svg class="clock">
                     <use class="clock" href="./images/icons.svg#clock"></use>
                   </svg>
                 </div>
-                <h3 class="advant-item-title">Пунктуальность</h3>
-                <p class="advant-item-description">
+                <h3 class="advant__title">Пунктуальность</h3>
+                <p class="advant__description">
                   Задача организации, в особенности же рамки и место обучения кадров
                   влечет за собой.
                 </p>
               </li>
-              <li class="advant-item">
-                <div class="advant-svg">
+              <li class="advant__item">
+                <div class="advant__svg">
                   <svg class="laptop">
                     <use href="./images/icons.svg#laptop"></use>
                   </svg>
                 </div>
-                <h3 class="advant-item-title">Планирование</h3>
-                <p class="advant-item-description">
+                <h3 class="advant__title">Планирование</h3>
+                <p class="advant__description">
                   Равным образом консультация с широким активом в значительной
-                  степени обуславливает.
+                  степени обуславливает
                 </p>
               </li>
-              <li class="advant-item astronaut">
-                <div class="advant-svg">
+              
+              <li class="advant__item astronaut">
+                <div class="advant__svg">
                   <svg class="astronaut">
                     <use href="./images/icons.svg#astronaut"></use>
                   </svg>
                 </div>
-                <h3 class="advant-item-title">Современные технологии</h3>
-                <p class="advant-item-description">
+                <h3 class="advant__title">Современные технологии</h3>
+                <p class="advant__description">
                   Значимость этих проблем настолько очевидна, что реализация
                   плановых заданий.
                 </p>
@@ -454,54 +438,53 @@
         
 
         <div class="form" autocomplete="off">
-          <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>
+          <h4 class="form__title">Оставьте свои данные, мы вам перезвоним</h4>
           
-          <div class="form-field">
-            <label for="name" class="form-label">Имя</label>
-            <input type="text" class="form-input" name="name" id="name" placeholder=" ">
+          <div class="form__field">
+            <label for="name" class="form__label">Имя</label>
+            <input type="text" class="form__input" name="name" id="name" placeholder=" ">
             
-            <svg class="form-icon" width="12px" height="12px">
+            <svg class="form__icon" width="12px" height="12px">
               <use href="./images/icons.svg#user"> </use>
             </svg>
             
           </div>
         
-          <div class="form-field">
-            <label for="tel" class="form-label">Телефон</label>
-            <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " required> 
+          <div class="form__field">
+            <label for="tel" class="form__label">Телефон</label>
+            <input type="tel" class="form__input" name="tel" id="tel" placeholder=" " required> 
          
-            <svg class="form-icon" width="13px" height="13px">
+            <svg class="form__icon" width="13px" height="13px">
               <use href="./images/icons.svg#phone" width="13px" height="13px"> </use>
             </svg>
 
           </div>
 
-          <div class="form-field">
-            <label for="mail" class="form-label">Почта</label>
-            <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
+          <div class="form__field">
+            <label for="mail" class="form__label">Почта</label>
+            <input type="email" class="form__input" name="mail" id="mail" placeholder=" ">
                    
-            <svg class="form-icon" width="15px" height="12px">
+            <svg class="form__icon" width="15px" height="12px">
               <use href="./images/icons.svg#letter" width="15px" height="12px"> </use>
             </svg>
 
 
           </div>
          
-          <div class="form-field textarea">
-            <label for="text-area" class="form-label">Комментарий</label>
+          <div class="form__field">
+            <label for="text-area" class="form__label">Комментарий</label>
             <textarea name="textarea" id="text-area" placeholder="Введите текст"></textarea>
           </div>
 
-          <label for="checkbox" class="label">
-            <input type="checkbox" name="checkbox" id="checkbox" value="Соглашаюсь с рассылкой и принимаю" class="checkbox">
-           
-            <span class="icon"></span>
-            <span class="licence-agreed">Соглашаюсь с рассылкой и принимаю<span><a href="" class="terms-of-usage"> Условия договора</a></span></span>
+          <label for="checkbox" class="licence">
+            <input type="checkbox" name="checkbox" id="checkbox" value="Соглашаюсь с рассылкой и принимаю" class="licence__checkbox">
+            <span class="licence__icon"></span>
+            <span class="licence__agreed">Соглашаюсь с рассылкой и принимаю<span><a href="" class="licence__terms"> Условия договора</a></span></span>
           </label>
 
 
 
-        <div class="submit-button">
+        <div class="form-button">
           <button type="submit" class="button-submit">Отправить</button>
         </div>
 
