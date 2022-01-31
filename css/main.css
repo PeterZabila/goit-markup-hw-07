@@ -662,10 +662,6 @@ footer {
   background-color: var(--second-font-color);
 }
 
-.footer-sm__link:not(:last-child) {
-  margin-right: 10px;
-}
-
 .footer-sm__item .footer-sm__svg--instagram {
   width: 16.86px;
   height: 16.86px;
