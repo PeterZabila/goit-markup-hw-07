@@ -73,8 +73,6 @@
     }
   }
 
-  
-  
   .sm__link {
     display: flex;
     justify-content: center;
@@ -96,13 +94,11 @@
     justify-content: center;
     align-items: center;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      .sm__link:hover &, .sm__link:active &, .sm__link:focus &  {
+        fill: white;
+      }
   }
 
-  .sm__link:hover .sm__svg, .sm__link:active .sm__svg, .sm__link:focus .sm__svg  {
-    fill: white;
-  }
-  
- 
   
   .sm__item .sm__svg--instagram {
     width: 16.86px;

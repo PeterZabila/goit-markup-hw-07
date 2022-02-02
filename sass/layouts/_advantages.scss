@@ -14,20 +14,20 @@
     justify-content: center;
   }
   
-  .advant__svg .clock {
+  .clock {
     width: 66.96px;
     height: 70px;
     justify-content: center;
   }
   
-  .advant__svg .laptop {
+  .laptop {
     width: 70px;
     height: 53.69px;
     display: flex;
     justify-content: center;
   }
   
-  .advant__svg .astronaut {
+  .astronaut {
     width: 70px;
     height: 70px;
     display: flex;
@@ -46,16 +46,14 @@
     flex-wrap: wrap;
   }
   
-  .advant > .advant__item {
+  .advant__item {
     font-family: var(--base-font);
     margin-left: 30px;
     flex-basis: calc(100% / 4 - 30px);
+      &:first-child {
+        margin-left: 0px;
+      }
   }
-  
-  .advant__item:first-child {
-    margin-left: 0px;
-  }
-
   
   .advant__title {
     font-family: var(--base-font);

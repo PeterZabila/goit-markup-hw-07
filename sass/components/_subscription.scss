@@ -27,28 +27,22 @@
     filter: drop-shadow(0px4px4pxrgba(0, 0, 0, 0.15));
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+      border-color: var(--second-font-color);
+      color: #fff;
+    }
+    &:focus::placeholder {
+      opacity: 0;
+     }
+    &::placeholder {
+      color: var(--base-font-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover::placeholder {
+      color: var(--second-font-color);
+    }
   }
-  
-  .subscription-email:hover{
-    border-color: var(--second-font-color);
-    color: #fff;
-  }
-  
-  
-  
-  .subscription-email:focus::placeholder {
-   opacity: 0;
-  }
-  
-  .subscription-email::placeholder {
-    color: var(--base-font-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-  
-  .subscription-email:hover::placeholder {
-    color: var(--second-font-color);
-  }
-  
+    
   .subscription-button {
     width: 200px;
     height: 50px;
@@ -63,24 +57,23 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     position: relative;
     border-color: transparent;
+      &:hover, &:focus, &:active   {
+        background-color: #188CE8;
+        outline: none;
+      }
+      &:after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/send.png);
+        position: absolute;
+        top: 13px;
+        left: 148px;
+        display: inline-block;
+        border-color: transparent;
+      }
   } 
   
-  .subscription-button:hover, .subscription-button:focus, .subscription-button:active   {
-    background-color: #188CE8;
-    outline: none;
-  }
-    
-  .subscription-button:after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    background-image: url(../images/send.png);
-    position: absolute;
-    top: 13px;
-    left: 148px;
-    display: inline-block;
-    border-color: transparent;
-  }
   
   .button-title {
     font-weight: bold;
